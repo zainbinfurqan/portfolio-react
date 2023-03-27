@@ -1,38 +1,288 @@
-/* .App {
-  text-align: center;
-} */
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Hassan's CSS Start */
+body {
+  overflow-x: hidden;
+}
+Nav {
+  text-decoration: none;
+  margin-right: -12px;
+  font-size: 1.4rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand {
+  margin: 0;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  /* margin-right: 1rem; */
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+Nav.Link {
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Page Starts */
+.heading-title-animation {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App-link {
-  color: #61dafb;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
+.heading-title-animation h2 {
+  font-size: 4.7em;
+  margin: 0;
+  padding-bottom: 30px;
+  color: #000;
+  animation-duration: 4.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.heading-title-animation h2:nth-child(1) {
+  animation-name: rotating-text-1;
+}
+@keyframes rotating-text-1 {
   from {
-    transform: rotate(0deg);
+    transform: translateY(30%);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(50%);
+    opacity: 1;
   }
 }
+.front-end-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #797979 29%,
+    #3d3d3d 67%,
+    #000000 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  /*text-fill-color: transparent;*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  font-size: 28px;
+  padding: 65px 0;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* Home Page Ends */
+
+/*About Page Starts*/
+.about-heading {
+  color: rgb(50, 50, 50);
+  padding: 0 15px;
+  font-size: 3.1rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.about-para {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 18px 15px;
+}
+.about-main-image {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-main-image img {
+  font-size: 4.5em;
+  color: #000;
+  animation-duration: 4.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.about-main-image img:nth-child(1) {
+  animation-name: rotating-imag-1;
+}
+@keyframes rotating-imag-1 {
+  from {
+    transform: translateY(-8%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.education-heading {
+  margin-bottom: 0;
+  color: rgb(50, 50, 50);
+  padding: 10px 10px;
+  border-radius: 2px;
+  font-size: 3rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+.education-text-style {
+  font-size: 1.1rem;
+  padding: 8px 4px;
+  margin-left: 15px;
+}
+.education-text-inner-style {
+  padding-bottom: 8px;
+}
+.experience-heading-style {
+  font-size: 1.1rem;
+  padding: 8px 4px;
+  margin-left: 15px;
+}
+.experience-inner-style {
+  font-size: 1.1rem;
+  padding: 8px 4px;
+  margin-left: 15px;
+}
+.experience-footer-style {
+  font-size: 1rem;
+  padding: 8px 4px;
+  margin-left: 15px;
+}
+/*About Page Ends*/
+/* Service Page Starts */
+.card-heading-style {
+  text-align: center;
+  font-size: 1.9rem;
+  padding-block: inherit;
+}
+.service-card-text {
+  color: rgb(50, 50, 50);
+  line-height: 1.7;
+}
+.service-buttons {
+  padding-top: 27px;
+}
+/* Service Page Ends */
+/* Contact Us Page Statrs */
+.contact-form-style {
+  padding: 30px 25px;
+  background: rgb(240, 240, 240);
+  box-shadow: 10px 3px 15px rgb(225, 225, 225);
+  border-radius: 15px;
+}
+.contact-page-heading h1 {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 3.2rem;
+  padding: 10px 0px;
+}
+
+/* Contact Us Page Ends */
+
+@media only screen and (max-width: 480px) {
+  .about-main-image {
+    max-width: 468px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .about-main-image {
+    max-width: 518px;
+  }
+}
+@media only screen and (min-width: 226px) and (max-width: 575px) {
+  .style-db {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+  .style-db {
+    max-width: 165px;
+    max-height: 204px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .style-db {
+    max-width: 216px;
+    max-height: 205px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .style-be {
+    max-width: 375px;
+  }
+}
+.social-menu ul {
+  position: relative;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.social-menu ul li .fab {
+  font-size: 30px;
+  line-height: 60px;
+  transition: 0.3s;
+  color: #000;
+}
+
+.social-menu ul li .fab:hover {
+  color: #fff;
+}
+
+.social-menu ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #0077b5;
+}
+
+/* Hassan's CSS Ends */

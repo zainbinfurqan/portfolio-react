@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./About";
-import Home from "./Home";
-import Service from "./Service";
-import Contact from "./Contact";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Service from "./Pages/Service";
+import Contact from "./Pages/Contact";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
